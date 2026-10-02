@@ -17,8 +17,8 @@ resource "aws_iam_user" "IAMUser2" {
 
 # --- IAM ROLES ---
 resource "aws_iam_role" "IAMRole" {
-  path               = "/"
-  name               = "aws-elasticbeanstalk-ec2-role"
+  path = "/"
+  name = "aws-elasticbeanstalk-ec2-role"
   assume_role_policy = jsonencode({
     Version = "2012-10-17"
     Statement = [{
@@ -30,8 +30,8 @@ resource "aws_iam_role" "IAMRole" {
 }
 
 resource "aws_iam_role" "IAMRole3" {
-  path               = "/"
-  name               = "ec2-ssm-full-access-role"
+  path = "/"
+  name = "ec2-ssm-full-access-role"
   assume_role_policy = jsonencode({
     Version = "2012-10-17"
     Statement = [{
@@ -43,8 +43,8 @@ resource "aws_iam_role" "IAMRole3" {
 }
 
 resource "aws_iam_role" "IAMRole4" {
-  path               = "/"
-  name               = "instanceRole"
+  path = "/"
+  name = "instanceRole"
   assume_role_policy = jsonencode({
     Version = "2012-10-17"
     Statement = [{

@@ -1,10 +1,10 @@
 # --- EC2 INSTANCES ---
 resource "aws_instance" "EC2Instance" {
-  ami                   = "ami-0b5358cc8c5df0b02"
-  instance_type         = "t3.small"
-  subnet_id             = aws_subnet.EC2Subnet.id
+  ami                    = "ami-0b5358cc8c5df0b02"
+  instance_type          = "t3.small"
+  subnet_id              = aws_subnet.EC2Subnet.id
   vpc_security_group_ids = [aws_security_group.EC2SecurityGroup.id]
-  iam_instance_profile  = aws_iam_instance_profile.IAMInstanceProfile2.name
+  iam_instance_profile   = aws_iam_instance_profile.IAMInstanceProfile2.name
 
   root_block_device {
     volume_size           = 30
