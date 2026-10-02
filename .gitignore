@@ -1,0 +1,13 @@
+# Local Terraform state files
+*.tfstate
+*.tfstate.*
+crash.log
+
+# Cached provider plugins & modules
+.terraform/
+
+# Secret files, keys, and environment variables
+*.pem
+*.key
+*.tfvars
+.env
